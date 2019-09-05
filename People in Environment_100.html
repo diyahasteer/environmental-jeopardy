@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> ____ was the first all-electric car to travel more than 200 miles per charge. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="Tesla")||(a.value=="Tesla Roadstar"))
+{
+document.getElementById('err').innerHTML= 'correct, the roadstar was made to help the environment by not emitting gas and fuel like other cars do.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'wrong, the correct answer is Tesla Roadstar. The roadstar was made to help the environment by not emitting gas and fuel like other cars do.';
+
+}
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> Apple planted ______ trees around the new spaceship campus. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="9,000")||(a.value=="nine thousand"))
+{
+document.getElementById('err').innerHTML= 'correct. Trees provide ecosystems for birds and other animals. By planting the trees, Apple is giving homw to the animals.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'wrong, the correct answer is nine thousand trees. Trees provide ecosystems for birds and other animals. By planting the trees, Apple is giving homw to the animals.';
+
+}
+
+}
+</script>
+</body>
+</html>

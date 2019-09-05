@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> In 2010, paper recycling had increased 89% since _____. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="1990")||(a.value=="1990"))
+{
+document.getElementById('err').innerHTML= 'Correct. Now we recycle 67% of the paper we use, so we still have a long way to go.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer is 1990. Now we recylce 67% of the paper we use, so we still have a long way to go. ';
+
+}
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p>Between the 21st century and 22st century, heat related deaths will rise by _____. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="150,000")||(a.value=="150 thousand"))
+{
+document.getElementById('err').innerHTML= 'Correct';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer is 150,000.';
+
+}
+
+}
+</script>
+</body>
+</html>

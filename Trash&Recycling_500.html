@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> The EPA estimates that _____ percent of American waste is recyclable but we only recycle _____ percent of it. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="75, 30")||(a.value=="seventy-five, thirty"))
+{
+document.getElementById('err').innerHTML= 'Correct. If everyone is properly educated, we should be able to recycle all of it.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer is 75 percent and 30 percent. If everyone is properly educated, we should be able to recycle all of it.';
+
+}
+
+}
+</script>
+</body>
+</html>

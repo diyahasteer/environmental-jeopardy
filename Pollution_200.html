@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> Over 100 thousand ______ are killed every year by pollution. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="sea animals")||(a.value=="sea mammals"))
+{
+document.getElementById('err').innerHTML= 'Correct! Sea pollution is when oil, plastic, and waste land up in the ocean and animals mistakenly eat it.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong! The correct answer is sea animals. Sea pollution is when oil, plastic, and waste land up in the ocean and animals mistakenly eat it.';
+
+}
+
+}
+</script>
+</body>
+</html>

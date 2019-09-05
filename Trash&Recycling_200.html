@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> Americans make more than _____ million tons of garbage per year. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="200")||(a.value=="two hundred"))
+{
+document.getElementById('err').innerHTML= 'Correct, This garbage often ends up in the ocean harming sea animals, so recycling is important.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer is 200 million tons. This garbage often ends up in the ocean harming sea animals, so recycling is important. ';
+
+}
+
+}
+</script>
+</body>
+</html>

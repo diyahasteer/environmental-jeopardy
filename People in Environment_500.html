@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> _____ worked tirelessly to preserve the environment. His work led to the creation of the Yosemite National Park, Sequoia National Park, and other national parks. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="John Muir")||(a.value=="Muir"))
+{
+document.getElementById('err').innerHTML= 'Correct! John Muir was an environmental philosopher. Fun Facts: A school was named after him. His nickname was Father of the National Parks';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong! the correct answer is John Muir. John Muir was an environmental philosopher. Fun Facts: A school was named after him. His nickname was Father of the National Parks';
+
+}
+
+}
+</script>
+</body>
+</html>

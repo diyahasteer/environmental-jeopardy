@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> ____ is a big industry that built a building with all solar panels. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="Apple")||(a.value=="apple"))
+{
+document.getElementById('err').innerHTML= 'correct. In fact, Apple has 0% impact on climate change. All of the data centers they have use renewable energy sources.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'wrong, the correct answer is Apple. Apple tries to very environmently-friendly. In fact, Apple has 0% impact on climate change. All of the data centers they have use renewable energy sources.';
+
+}
+
+}
+</script>
+</body>
+</html>

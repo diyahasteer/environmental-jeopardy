@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> Nearly _____ out of 10 smokers start smoking before the age of 18. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="9")||(a.value=="Nine"))
+{
+document.getElementById('err').innerHTML= 'Correct, additionally, most people under the age of 26 start to develop diseases from smoking.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer is 9. Additionally, most people under the age of 26 start to develop diseases from smoking.';
+
+}
+
+}
+</script>
+</body>
+</html>

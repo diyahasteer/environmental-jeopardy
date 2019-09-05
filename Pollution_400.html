@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> Each year _____ gallons  of sewage, storm water, and industrial waste is dumped into U.S. water. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="1,200,000,000")||(a.value=="1.2 trillion"))
+{
+document.getElementById('err').innerHTML= 'Correct!';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong! The correnct answer 1.2 trillion. ';
+
+}
+
+}
+</script>
+</body>
+</html>

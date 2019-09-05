@@ -1,0 +1,186 @@
+<html> 
+
+<head> 
+
+<style> 
+
+a:link {
+display: block; 
+font-weight: bold; 
+color: #ffffff; 
+background-color: #799fb2; 
+width: 120px; 
+text-align: center; 
+padding: 4px; 
+text-decoration: none; 
+
+}
+
+a:visited {
+display: block; 
+font-weight: bold; 
+color: #ffffff; 
+background-color: #ffffff; 
+width: 120px; 
+text-align: center; 
+padding: 4px; 
+text-decoration: none; 
+
+}
+
+a:hover {
+color: blue
+}
+</style> 
+
+</head>
+
+<body>
+
+<h1><center> <font color ="021e0d" > Environmental Jeopardy</font</center</h1>
+
+<table>
+<tr> 
+<td colspan="2">
+
+<table border ="1" cellpadding="10" cellspacing="0" align="center" >
+
+<tr>
+<tr bgcolor = "087a35" >
+<th>Smoking</th>
+<th>Pollution</th>
+<th>Trash&Recycling</th>
+<th>Global Warming</th>
+<th>People in Environment</th>
+</tr>
+
+
+<tr bgcolor = "99ccad" align="center" >
+<td><a target="demo" href ="Smoking_100.html">100</a></font></td>
+<td><a target="demo" href ="Pollution_100.html">100</a></font></td>
+<td><a target="demo" href ="Trash&Recycling_100.html">100</a></font></td>
+<td><a target="demo" href ="GlobalWarming_100.html">100</a></font></td>
+<td><a target="demo" href ="People in Environment_100.html">100</a></font></td>
+</tr> 
+
+<tr bgcolor = "648771" align="center" >
+<td><a target="demo" href ="Smoking_200.html">200</a></font></td>
+<td><a target="demo" href ="Pollution_200.html">200</a></font></td>
+<td><a target="demo" href ="Trash&Recycling_200.html">200</a></font></td>
+<td><a target="demo" href ="GlobalWarming_200.html">200</a></font></td>
+<td><a target="demo" href ="People in Environment_200.html">200</a></font></td>
+</tr> 
+
+<tr bgcolor = "99ccad" align="center" >
+<td><a target="demo" href ="Smoking_300.html">300</a></font></td>
+<td><a target="demo" href ="Pollution_300.html">300</a></font></td>
+<td><a target="demo" href ="Trash&Recycling_300.html">300</a></font></td>
+<td><a target="demo" href ="GlobalWarming_300.html">300</a></font></td>
+<td><a target="demo" href ="People in Environment_300.html">300</a></font></td>
+</tr> 
+
+
+<tr bgcolor = "648771" align="center" >
+<td><a target="demo" href ="Smoking_400.html">400</a></font></td>
+<td><a target="demo" href ="Pollution_400.html">400</a></font></td>
+<td><a target="demo" href ="Trash&Recycling_400.html">400</a></font></td>
+<td><a target="demo" href ="GlobalWarming_400.html">400</a></font></td>
+<td><a target="demo" href ="People in Environment_400.html">400</a></font></td>
+</tr> 
+
+
+<tr bgcolor = "99ccad" align="center" >
+<td><a target="demo" href ="Smoking_500.html">500</a></font></td>
+<td><a target="demo" href ="Pollution_500.html">500</a></font></td>
+<td><a target="demo" href ="Trash&Recycling_500.html">500</a></font></td>
+<td><a target="demo" href ="GlobalWarming_500.html">500</a></font></td>
+<td><a target="demo" href ="People in Environment_500.html">500</a></font></td>
+</tr> 
+
+</td>
+</tr>
+</table>
+
+
+<tr>
+<td>
+<table border="1">
+<tr>
+<td colspan="3">
+SCOREBOARD
+</td> 
+</tr> 
+<tr>
+<td id="demo">Player 1</td>
+<td id="demo2">Player 2</td>
+<td id="demo3">Player 3</td>
+</tr>
+<tr>
+<td id="updateScore1">0.0</td> 
+<td id="updateScore2">0.0</td> 
+<td id="updateScore3">0.0</td>
+</tr>
+<tr> 
+<td>
+<input type ="text" id="team1Score" size="3"/>
+<input type="button" value="Add Score" onclick="changeScore1(document.getElementById('team1Score').value)"/>
+</td>
+<td>
+<input type ="text" id="team2Score" size="3"/>
+<input type="button" value="Add Score" onclick="changeScore2(document.getElementById('team2Score').value)"/>
+</td>
+<td>
+<input type ="text" id="team3Score" size="3"/>
+<input type="button" value="Add Score" onclick="changeScore3(document.getElementById('team3Score').value)"/>
+</td>
+
+</table>
+
+
+</td>
+
+<td>
+
+<iframe id= "demo" name="demo" src= "blank.html"
+style ="height:200px;width:280px;"></iframe>
+
+</td> 
+
+</tr>
+</table>
+
+
+
+</body>
+
+<script>
+var score1 = 0;
+	
+	function changeScore1(value){
+		console.log('value=' + value);
+		score1 = score1 + parseInt(value);
+		console.log('score=' + score1);
+		document.getElementById('updateScore1').innerHTML=score1;
+	}
+
+
+var score2 = 0;
+	
+	function changeScore2(value){
+		console.log('value=' + value);
+		score2 = score2 + parseInt(value);
+		console.log('score=' + score2);
+		document.getElementById('updateScore2').innerHTML=score2;
+	}
+
+var score3 = 0;
+	
+	function changeScore3(value){
+		console.log('value=' + value);
+		score3 = score3 + parseInt(value);
+		console.log('score=' + score3);
+		document.getElementById('updateScore3').innerHTML=score3;
+	}
+</script>
+</body>
+</html>

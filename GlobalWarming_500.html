@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> The last two decades of the 20th century have been the _____ in the last 400 years. </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="hottest")||(a.value=="warmest"))
+{
+document.getElementById('err').innerHTML= 'Correct.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer hottest.';
+
+}
+
+}
+</script>
+</body>
+</html>

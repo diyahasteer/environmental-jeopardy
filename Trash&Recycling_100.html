@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<head>
+<link rel ="stylesheet" type="text/css" href = "mystyle.css"/>
+</head>
+
+<p><a href = "jeopardy1.html"><-Back></a></p>
+
+<p> About how many marine animals die from plastic entaglement and ingestion? </p>
+
+
+<input type="text" id="test">
+<input type="button" value="click" onclick="z()"><span id="err"></span>
+
+<script>
+function z()
+{
+var a=document.getElementById("test");
+if((a.value=="100,000")||(a.value=="one hundred thousand"))
+{
+document.getElementById('err').innerHTML= 'Correct. We can lower this number by throwing away our trash in the proper bins.';
+}
+else
+{
+document.getElementById('err').innerHTML= 'Wrong, the correct answer is 100,000. We can lower this number by throwing away our trash in the proper bins. ';
+
+}
+
+}
+</script>
+</body>
+</html>
